@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*head*/
+header {
+    background-color: gray;
+    background-image: url("img/1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    background-size: 100%;
+}
+
+
+.name {
+    margin-left: 50px;
+    position: absolute;
+    margin-bottom: 50px;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 400px;
+}
+h1 {
+    font-size: 35px;
+    color: white;
+    font-family: "Times New Roman", sans-serif;
+}
+
+li {
+    display: inline-block;
+    margin-left: 40px;
+    float: right;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+li  {
+    text-decoration: none;
+}
+.icon {
+    display: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+
+}
+@media screen and (max-width: 680px) {
+    li:not(:first-child) {
+        display: none;
+    }
+    li.icon {
+        float: left;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display:inline;
+    }
+    ul.topnav.responsive li a {
+  display: block;
+        text-align: right;
+
+    }
+}
+/*about*/
+.about_me {
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    background-size: 100%;
+    border: 1px solid gray;
+    background-color: gray;
+}
+
+.photo1 {
+    position: absolute;
+    margin: 100px 50px;
+    z-index: 1;
+}
+
+.photo2 {
+    position: absolute;
+    float: left;
+    margin: 250px 100px 50px 200px;
+    z-index: 2;
+}
+
+.text {
+    margin-left: 600px;
+    margin-top: 200px;
+}
+
+footer {
+    height:200px;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: yellowgreen;
+}
+
+#portfolio {
+    position: relative;
+    text-align: center;
+}
+
+.modal_window {
+    position: fixed;
+    z-index: 1000;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+
+
+}
+.content {
+    background-color: brown;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    align-items: center;
+    z-index: 99999;
+}
+.close
+{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
